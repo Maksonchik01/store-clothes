@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <a class="header-logo-link" href="#">Shop</a>
+      </div>
+      <div class="header-right">
+        <ul class="header-list">
+          <li class="header-list-item">
+            <a class="header-list-item-link" href="#">About</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-item-link" href="#">Contact</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-item-link" href="#">Registration</a>
+          </li>
+          <li class="header-list-item">
+            <a class="header-list-item-link" href="#"
+              ><img
+                class="header-list-item-link-img"
+                src="./img/cart.png"
+                alt=""
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-right">
+              <img src="./img/hero-1.jpg" alt="intel box" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROMO CARDS -->
+      <section class="promo">
+        <div class="container promo-grid">
+          <div class="promo-card">
+            <img src="./img/banner-1.jpg" alt="" />
+          </div>
+
+          <div class="promo-card">
+            <img src="./img/banner-2.jpg" alt="" />
+          </div>
+
+          <div class="promo-card">
+            <img src="./img/banner-3.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+      <div class="container">
+
+  <!-- FILTER SIDEBAR -->
+  <aside class="filters">
+
+    <h3>Filters</h3>
+
+    <!-- PRICE -->
+    <div class="filter-group">
+      <label>Max Price: $<span id="priceValue">500</span></label>
+      <input type="range" id="priceRange" min="0" max="500" value="500">
+    </div>
+
+    <!-- CATEGORY -->
+    <div class="filter-group">
+      <label>Category</label>
+      <select id="categoryFilter">
+        <option value="all">All</option>
+        <option value="vr">VR</option>
+        <option value="camera">Camera</option>
+        <option value="audio">Audio</option>
+        <option value="phone">Phone</option>
+      </select>
+    </div>
+
+    <!-- SORT -->
+    <div class="filter-group">
+      <label>Sort by price</label>
+      <select id="sortPrice">
+        <option value="default">Default</option>
+        <option value="low">Low → High</option>
+        <option value="high">High → Low</option>
+      </select>
+    </div>
+
+    <!-- IN STOCK -->
+    <div class="filter-group">
+      <label>
+        <input type="checkbox" id="stockOnly">
+        In stock only
+      </label>
+    </div>
+
+  </aside>
+
+  <!-- PRODUCTS -->
+  <section class="products" id="productContainer">
+
+  </section>
+
+</div>
+    </main>
+    <footer class="footer">
+
+  <!-- SUBSCRIBE -->
+  <div class="subscribe">
+    <div class="container">
+      <h2>Subscribe our newsletter</h2>
+      <p>Subscribe to receive updates on our store and special offers</p>
+
+      <div class="subscribe-box">
+        <input type="email" placeholder="Your email">
+        <button>➤</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- MAIN FOOTER -->
+  <div class="footer-main">
+    <div class="container footer-grid">
+
+      <div class="footer-col">
+        <h4>About Information</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Qui, odit. Quia praesentium doloribus quasi minima.</p>
+
+        <div class="store-buttons">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" alt="">
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>Home</li>
+          <li>About us</li>
+          <li>Contact us</li>
+          <li>Blog</li>
+          <li>New products</li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Contact Us</h4>
+        <p>📍 Av. Colon 1234, Buenos Aires, Argentina</p>
+        <p>✉ Infinite@example.com</p>
+        <p>📞 (+54) 2284-123456789</p>
+
+        <div class="social">
+          <span>f</span>
+          <span>x</span>
+          <span>ig</span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>Copyright © 2026 Example.</p>
+      <p>Privacy Policy - Terms And Conditions</p>
+    </div>
+  </div>
+
+</footer>
+  </body>
+</html>
